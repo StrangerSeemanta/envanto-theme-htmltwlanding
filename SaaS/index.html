@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landux - SaaS Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts (e.g., Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .btn-primary {
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navbar -->
+    <header class="border-b dark:border-gray-700 shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Landux</h1>
+        <!-- For Mobile Navigation -->
+        <div
+          class="md:hidden block menuBar transition-all duration-250 relative w-8 h-8 flex justify-center items-center cursor-pointer overflow-hidden"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div
+          class="mobile-nav-drawer fade-in md:hidden flex flex-col justify-center items-center p-6"
+        >
+          <nav
+            class="space-y-6 flex flex-col text-lg items-center justify-center"
+          >
+            <a
+              href="index.html"
+              class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="pricing.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Pricing</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex justify-center items-center mt-4">
+            <a
+              href="/Documentation/index.html"
+              target="_blank"
+              class="cursor-pointer bg-transparent p-2 rounded focus:outline-none"
+            >
+              Documentaion
+            </a>
+          </div>
+        </div>
+        <!-- For Desktop -->
+        <nav class="space-x-6 hidden md:block">
+          <a
+            href="index.html"
+            class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="pricing.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="space-x-4 hidden md:block">
+          <a
+            href="/Documentation/index.html"
+            target="_blank"
+            class="cursor-pointer bg-transparent hover:bg-black hover:text-white transition border-2 border-black p-2 rounded focus:outline-none"
+          >
+            Documentaion
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Video Background (or image overlay) -->
+    <section class="relative h-screen overflow-hidden">
+      <!-- Background Video/Image -->
+      <div class="absolute inset-0">
+        <img
+          src="/Template/Assets/video/hero-bg.gif"
+          class="object-cover w-full h-full"
+          alt="background-loading"
+        />
+        <!-- Fallback Image -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+      </div>
+      <div
+        class="relative z-10 flex items-center justify-center h-full text-center px-4"
+      >
+        <div class="fade-in">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-4">
+            Build Your SaaS Business with Landux
+          </h2>
+          <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+            A high-converting, modern Tailwind CSS landing page template to help
+            launch your next product faster.
+          </p>
+          <div class="space-x-4">
+            <a
+              href="#"
+              class="btn-primary bg-blue-600 text-white px-8 py-3 rounded-lg shadow"
+              >Get Started</a
+            >
+            <a
+              href="pricing.html"
+              class="text-white border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600"
+              >View Pricing</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section with Icons -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Features</h3>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div
+            class="text-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="mb-4">
+              <img
+                src="../assets/images/responsive-ico.svg"
+                alt="Responsive"
+                class="mx-auto h-28"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              Works seamlessly on desktops, tablets, and mobile devices.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="mb-4">
+              <img
+                src="../assets/images/customizable.svg"
+                alt="Customizable"
+                class="mx-auto h-28"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-2">Customizable Components</h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              Tailor every element to match your brand’s identity effortlessly.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="mb-4">
+              <img
+                src="../assets/images/seo.svg"
+                alt="SEO Optimized"
+                class="mx-auto h-28"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-2">SEO Optimized</h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              Built with best practices to help you rank higher in search
+              engines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">
+          What Our Clients Say
+        </h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <p class="italic text-gray-700 dark:text-gray-300 mb-4">
+              "Landux transformed our online presence. The design is modern, and
+              the functionality exceeded our expectations."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="../assets/images/user_1.svg"
+                alt="Client"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <p class="font-semibold">John Doe</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  CEO, Example Inc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <p class="italic text-gray-700 dark:text-gray-300 mb-4">
+              "An exceptional template that gave our startup a professional look
+              right out of the box. Highly recommended!"
+            </p>
+            <div class="flex items-center">
+              <img
+                src="../assets/images/user_3.svg"
+                alt="Client"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <p class="font-semibold">Jane Smith</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  Co-founder, Startup XYZ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="text-4xl font-bold text-white mb-4">
+          Ready to launch your SaaS?
+        </h3>
+        <p class="text-lg text-gray-200 mb-8">
+          Get started with Landux and experience a boost in conversions.
+        </p>
+        <a
+          href="#"
+          class="btn-primary bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold shadow"
+          >Start Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-700 dark:text-gray-300">
+          &copy; 2025 Landux. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Dark/Light Toggle Script -->
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
