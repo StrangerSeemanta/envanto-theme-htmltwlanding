@@ -30,6 +30,12 @@ header {
     opacity: 1;
   }
 }
+/* Image */
+img {
+  user-select: none !important;
+}
+
+/* Mobile Navigation */
 div.menuBar {
   transition: all linear 250ms;
 }

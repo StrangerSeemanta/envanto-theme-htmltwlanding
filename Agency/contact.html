@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Landux</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .input-focus:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navbar -->
+    <header class="border-b dark:border-gray-700 shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Landux</h1>
+        <!-- For Mobile Navigation -->
+        <div
+          class="md:hidden block menuBar transition-all duration-250 relative w-8 h-8 flex justify-center items-center cursor-pointer overflow-hidden"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div
+          class="mobile-nav-drawer fade-in md:hidden flex flex-col justify-center items-center p-6"
+        >
+          <nav
+            class="space-y-6 flex flex-col text-lg items-center justify-center"
+          >
+            <a
+              href="index.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="pricing.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Pricing</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 active dark:text-gray-300 hover:text-blue-600"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex justify-center items-center mt-4">
+            <a
+              href="/Documentation/index.html"
+              target="_blank"
+              class="cursor-pointer bg-transparent p-2 rounded focus:outline-none"
+            >
+              Documentation
+            </a>
+          </div>
+        </div>
+        <!-- For Desktop -->
+        <nav class="space-x-6 hidden md:block">
+          <a
+            href="index.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="pricing.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-700 active dark:text-gray-300 hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="space-x-4 hidden md:block">
+          <a
+            href="/Documentation/index.html"
+            target="_blank"
+            class="cursor-pointer bg-transparent hover:bg-black hover:text-white transition border-2 border-black p-2 rounded focus:outline-none"
+          >
+            Documentation
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="relative h-80 overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="../assets/images/contact.svg"
+          alt="About Banner"
+          class="object-contain md:object-cover w-full h-full fade-in"
+        />
+        <div class="absolute inset-0 bg-transparent opacity-40"></div>
+      </div>
+      <div class="relative flex items-center justify-center h-full">
+        <h2 class="text-4xl md:text-6xl font-bold text-red-400 fade-in">
+          Get In Touch
+        </h2>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <div
+          class="max-w-xl mx-auto bg-white dark:bg-gray-900 p-8 rounded-lg shadow-xl"
+        >
+          <h3 class="text-3xl font-bold text-center mb-6">Contact Us</h3>
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label
+                class="block text-gray-700 dark:text-gray-300 mb-2"
+                for="name"
+                >Name</label
+              >
+              <input
+                class="w-full px-4 py-2 border rounded input-focus"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-gray-700 dark:text-gray-300 mb-2"
+                for="email"
+                >Email</label
+              >
+              <input
+                class="w-full px-4 py-2 border rounded input-focus"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-gray-700 dark:text-gray-300 mb-2"
+                for="message"
+                >Message</label
+              >
+              <textarea
+                class="w-full px-4 py-2 border rounded input-focus"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Map/Office Section -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="container mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-4">Our Office</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          Visit us at our headquarters for a face-to-face meeting.
+        </p>
+        <div class="w-full h-64 flex justify-center items-center rounded-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6050.612745456989!2d-74.04955808115132!3d40.689249703014056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sbd!4v1744318200733!5m2!1sen!2sbd"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full h-64"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-700 dark:text-gray-300">
+          &copy; 2025 Landux. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Toggle Script -->
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      themeToggle.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

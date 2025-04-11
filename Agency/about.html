@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Landux</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navbar -->
+    <header class="border-b dark:border-gray-700 shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Landux</h1>
+        <!-- For Mobile Navigation -->
+        <div
+          class="md:hidden block menuBar transition-all duration-250 relative w-8 h-8 flex justify-center items-center cursor-pointer overflow-hidden"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div
+          class="mobile-nav-drawer fade-in md:hidden flex flex-col justify-center items-center p-6"
+        >
+          <nav
+            class="space-y-6 flex flex-col text-lg items-center justify-center"
+          >
+            <a
+              href="index.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="pricing.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Pricing</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex justify-center items-center mt-4">
+            <a
+              href="/Documentation/index.html"
+              target="_blank"
+              class="cursor-pointer bg-transparent p-2 rounded focus:outline-none"
+            >
+              Documentation
+            </a>
+          </div>
+        </div>
+        <!-- For Desktop -->
+        <nav class="space-x-6 hidden md:block">
+          <a
+            href="index.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="pricing.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="space-x-4 hidden md:block">
+          <a
+            href="/Documentation/index.html"
+            target="_blank"
+            class="cursor-pointer bg-transparent hover:bg-black hover:text-white transition border-2 border-black p-2 rounded focus:outline-none"
+          >
+            Documentation
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative h-80 overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="../assets/images/about-us.svg"
+          alt="About Banner"
+          class="object-contain md:object-cover w-full h-full fade-in"
+        />
+        <div class="absolute inset-0 bg-transparent opacity-40"></div>
+      </div>
+      <div class="relative flex items-center justify-center h-full">
+        <h2 class="text-4xl md:text-7xl font-bold text-purple-600 fade-in">
+          Who Are We
+        </h2>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 w-full">
+      <div
+        class="flex flex-col-reverse lg:flex-row justify-between items-center px-4 space-y-12"
+      >
+        <div class="max-w-xl text-justify p-12 mb-12">
+          <h3 class="text-4xl font-bold mb-4">About Us</h3>
+          <p class="text-xl text-gray-600 dark:text-gray-300">
+            Landux is more than just a landing page template. It’s a complete
+            solution designed to help you tell your brand’s story with elegance
+            and efficiency.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/Template/Assets/images/about_placeholder_pic.svg"
+            alt="about_us_pic"
+            class="object-cover pointer-events-none"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800 w-full">
+      <div class="flex justify-center items-center mx-auto px-4 space-y-12">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="space-y-4 fade-in px-5 py-12 max-w-md shadow-lg bg-white">
+            <h4 class="text-2xl font-semibold text-center">Our Mission</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-center">
+              We strive to empower startups, agencies, and creative
+              professionals with beautifully crafted web designs that drive
+              results.
+            </p>
+          </div>
+          <div class="space-y-4 fade-in px-5 py-12 max-w-md shadow-lg bg-white">
+            <h4 class="text-2xl font-semibold text-center">Our Vision</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-center">
+              To become the benchmark for high-quality, modern web templates
+              that combine design, functionality, and ease of use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Gallery -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Meet Our Team</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg transform hover:scale-105 transition"
+          >
+            <img
+              src="../assets/images/user_1.svg"
+              alt="Team Member"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-xl font-semibold">Alice Johnson</h4>
+            <p class="text-gray-600 dark:text-gray-400">CEO & Founder</p>
+          </div>
+          <div
+            class="text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg transform hover:scale-105 transition"
+          >
+            <img
+              src="../assets/images/user_2.svg"
+              alt="Team Member"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-xl font-semibold">Bob Smith</h4>
+            <p class="text-gray-600 dark:text-gray-400">Lead Developer</p>
+          </div>
+          <div
+            class="text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg transform hover:scale-105 transition"
+          >
+            <img
+              src="../assets/images/user_3.svg"
+              alt="Team Member"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h4 class="text-xl font-semibold">Carol White</h4>
+            <p class="text-gray-600 dark:text-gray-400">UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-700 dark:text-gray-300">
+          &copy; 2025 Landux. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Toggle Script -->
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

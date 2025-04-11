@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Landux</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .popular {
+        border: 2px solid #667eea;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navbar -->
+    <header class="border-b dark:border-gray-700 shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Landux</h1>
+        <!-- For Mobile Navigation -->
+        <div
+          class="md:hidden block menuBar transition-all duration-250 relative w-8 h-8 flex justify-center items-center cursor-pointer overflow-hidden"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div
+          class="mobile-nav-drawer fade-in md:hidden flex flex-col justify-center items-center p-6"
+        >
+          <nav
+            class="space-y-6 flex flex-col text-lg items-center justify-center"
+          >
+            <a
+              href="index.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="pricing.html"
+              class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Pricing</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex justify-center items-center mt-4">
+            <a
+              href="/Documentation/index.html"
+              target="_blank"
+              class="cursor-pointer bg-transparent p-2 rounded focus:outline-none"
+            >
+              Documentation
+            </a>
+          </div>
+        </div>
+        <!-- For Desktop -->
+        <nav class="space-x-6 hidden md:block">
+          <a
+            href="index.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="pricing.html"
+            class="active text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Pricing</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="space-x-4 hidden md:block">
+          <a
+            href="/Documentation/index.html"
+            target="_blank"
+            class="cursor-pointer bg-transparent hover:bg-black hover:text-white transition border-2 border-black p-2 rounded focus:outline-none"
+          >
+            Documentation
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative h-80 overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="../assets/images/pricing.svg"
+          alt="About Banner"
+          class="object-contain md:object-cover w-full h-full fade-in"
+        />
+        <div class="absolute inset-0 bg-transparent opacity-40"></div>
+      </div>
+      <div class="relative flex items-center justify-center h-full">
+        <h2 class="text-5xl md:text-7xl font-bold text-green-600 fade-in">
+          Pricing
+        </h2>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-12 bg-white dark:bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Starter Plan -->
+          <div
+            class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg transition card-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Free</h3>
+            <p class="text-3xl font-bold mb-4">$0</p>
+            <ul class="text-left space-y-2 mb-6">
+              <li>1 Project</li>
+              <li>Basic Support</li>
+              <li>Community Access</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-blue-600 text-white text-center px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              >Sign Up</a
+            >
+          </div>
+          <!-- Pro Plan (Popular) -->
+          <div
+            class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg popular transition card-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+            <p class="text-3xl font-bold mb-4">
+              $29<span class="text-lg font-normal">/mo</span>
+            </p>
+            <ul class="text-left space-y-2 mb-6">
+              <li>Unlimited Projects</li>
+              <li>Priority Support</li>
+              <li>Team Access</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-blue-600 text-white text-center px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              >Get Started</a
+            >
+          </div>
+          <!-- Enterprise Plan -->
+          <div
+            class="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg transition card-hover"
+          >
+            <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+            <p class="text-3xl font-bold mb-4">Contact Us</p>
+            <ul class="text-left space-y-2 mb-6">
+              <li>Custom Features</li>
+              <li>Dedicated Manager</li>
+              <li>Service Level Agreement</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-blue-600 text-white text-center px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              >Contact Sales</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-700 dark:text-gray-300">
+          &copy; 2025 Landux. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
